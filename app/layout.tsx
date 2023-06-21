@@ -1,4 +1,4 @@
-import { Footer, Header } from "../components/layout";
+import { Footer, Header, Provider } from "../components";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
@@ -24,11 +24,11 @@ export default function RootLayout({
               <Header />
             </header>
             <main className={`${styles.main} gap-9 pr-80 pl-5`}>
-              {children}
+              <Provider>{children}</Provider>
             </main>
           </div>
           <footer>
-            <Header />
+            <Footer />
           </footer>
         </div>
       </body>
