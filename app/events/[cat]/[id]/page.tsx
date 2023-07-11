@@ -9,8 +9,9 @@ interface paramsType {
 export async function generateMetadata({
   params,
 }: paramsType): Promise<Metadata> {
-  const { event } = await fetchSingleEvent(params.cat, params.id);
-  const { image } = event;
+  const {
+    event: { image },
+  } = await fetchSingleEvent(params.cat, params.id);
 
   return {
     title: params.id,
