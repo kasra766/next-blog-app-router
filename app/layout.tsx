@@ -24,7 +24,8 @@ export default function RootLayout({
               <Header />
             </header>
             <main className={`${styles.main} gap-9 pr-80 pl-5`}>
-              <Provider> {children}</Provider>  </main>
+              <Provider> {children}</Provider>
+            </main>
           </div>
           <footer>
             <Footer />
