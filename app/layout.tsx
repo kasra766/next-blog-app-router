@@ -18,14 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col justify-between min-h-screen">
+        <div className="flex flex-col justify-between min-h-screen ">
           <div>
             <header className="sticky top-0  w-full mb-5">
               <Header />
             </header>
             <main className={`${styles.main} gap-9 pr-80 pl-5`}>
-              <Provider>{children}</Provider>
-            </main>
+              <Provider> {children}</Provider>  </main>
           </div>
           <footer>
             <Footer />
