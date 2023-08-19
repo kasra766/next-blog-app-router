@@ -20,10 +20,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-col justify-between min-h-screen ">
           <div>
-            <header className="sticky top-0  w-full mb-5">
+            <header className="sticky top-0  w-full mb-5 z-10">
               <Header />
             </header>
-            <main className={`${styles.main} gap-9 pr-80 pl-5`}>
+            <main className={`${styles.main} gap-9 p-10`}>
               <Provider> {children}</Provider>
             </main>
           </div>
