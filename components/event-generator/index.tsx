@@ -25,7 +25,7 @@ export function EventGenerator({
           height={500}
           className="cover-style"
         />
-        <h1 className="text-xl font-bold mt-3" data-testid={id}>
+        <h1 className="mt-3 text-xl font-bold" data-testid={id}>
           {title}
         </h1>
         <p className="whitespace-normal">{description}</p>
